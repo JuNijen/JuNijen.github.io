@@ -1,0 +1,55 @@
+<!-- JS Casino
+https://nomadcoders.co/javascript-for-beginners/lectures/2899
+오늘의 강의: 바닐라JS로 크롬앱 만들기: From #4.0 to #4.7
+오늘의 과제: 위의 강의를 시청하신 후, 아래 코드 챌린지를 제출하세요.
+제출기간: 익일 오전 6시까지
+-->
+
+<!-- Make a number guessing game using Javascript!
+https://i.imgur.com/kxHVIii.mp4
+-->
+
+<!-- 조건
+0에서 사용자가 지정한 숫자까지의 범위에서 랜덤 한 숫자를 찾으세요. (범위는 0 이상 입력값 이하가 됩니다.)
+범위에는 음수가 포함될 수 없습니다.
+실시간으로 범위 값을 업데이트해야 합니다.
+유저가 숫자를 선택한 후에 게임을 플레이할 수 있습니다.
+유저에게 게임의 승패를 알려야 합니다.
+-->
+
+<!-- Hint
+To learn how to find random numbers watch this lecture
+https://nomadcoders.co/javascript-for-beginners/lectures/2911
+-->
+
+<!-- 제출방법
+코딩 챌린지는 Code Sandbox 라는 툴을 이용하여 제출합니다.
+사용방법: https://nomadcoders.co/faq/code-sandbox
+제출기간: 수요일 오전 6시까지!
+-->
+
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="">
+        <link rel="stsylesheet" href="../css/Day8.css">
+        <title>Ruhr's challenge Day8</title>
+    </head>
+
+    <body>
+        <h1>Random Number Game</h1>
+        <!-- <form id="random-form"> -->
+        <form id="arrange-input">
+            <h2>Generate a Number between 0 and <input type="number"></h2>
+        </form>
+        <form id="user-input">
+            <a>Guess the number : </a>
+            <input type="number">
+            <button type="submit">Play!</button>            
+        </form>
+        <a id="answer" class="hidden">you chose : </a><br> 
+        <a id="game-result" class="hidden"></a>    
+        <script src="../js/Day8.js"></script>
+    </body>
+</html>
