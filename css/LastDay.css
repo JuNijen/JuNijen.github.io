@@ -31,12 +31,39 @@ span {
     font-size: 1rem;
 }
 
-
-
 /* 숨김 처리 */
 .hidden {
     /* Layout Properties */
-    display: none;
+    display: none !important;
+}
+
+
+#login-form {
+    /* Layout Properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3.1rem;
+}
+
+form input{
+    /* Layout Properties */
+    width: 490px;
+    height: 50px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    /* UI Properties */
+    border: none;
+    border-radius: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+form input[type=submit]{
+    /* Layout Properties */
+    width: 100px;
+    margin-left: 10px;
 }
 
 
