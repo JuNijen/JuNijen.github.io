@@ -1,21 +1,81 @@
+<!-- Let's Finish This!
+https://nomadcoders.co/javascript-for-beginners/lectures/2914
+오늘의 강의: 바닐라JS로 크롬앱 만들기: From #7.0 to #8.2
+오늘의 과제: 졸업작품
+제출기간: 4일 챌린지! 월요일 새벽 6시까지 (!!!잊지마세요!!!)
+-->
+
+<!-- Challenge goals:
+바닐라 JS 과정 프로젝트를 완료하고 Github Pages를 이용해 배포하세요.
+-->
+
+<!-- 조건
+    1. 실시간 시계
+    2. 로컬 스토리지를 사용한 로그인
+    3. 로컬 스토리지를 사용한 투두리스트
+    4. 랜덤 배경 이미지
+    5. 날씨와 위치 (geolocation)
+    6. 여러분의 CSS 실력을 뽐내주세요💖
+-->
+
+<!-- 제출방법
+제출기간: 월요일 새벽 6시까지! 잊지마세요!
+제출하실때 깃헙.io 포멧으로 제출 부탁드립니다!
+GitHub Pages
+https://pages.github.com/
+-->
+
 <!DOCTYPE html>
 <html lang="kr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="">
-    <title>Ruhr's challenge</title>
-
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#LastDay").load("./html/LastDay.html");
-        });
-    </script>
+    <link rel="stylesheet" href="./css/LastDay.css" type="text/css">
+    <!-- <link rel="stsylesheet" href="../css/LastDay.css"> -->
+    <title>Ruhr's Last Challenge!</title>
 </head>
 
 <body>
-    <div id="LastDay"></div>
+
+    <div class="main-box">
+        <!-- Clock -->
+        <h2 id="clock">00:00:00</h2>
+
+        <!-- Greeting -->
+        <form class="hidden" id="login-form">
+            <input required maxlength="15" type="text" placeholder="What is your name?" />
+            <input type="submit" value="Log In" />
+        </form>
+        <h1 class="hidden" id="greeting"></h1>
+
+        <!-- Quote -->
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- weather -->
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- To-do List -->
+    <div id="todo-group">
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required />
+        </form>
+        <ul id="todo-list"></ul>    
+    </div>
+
+    <script src="./js/Background.js"></script>
+    <script src="./js/Clock.js"></script>
+    <script src="./js/Greetings.js"></script>
+    <script src="./js/Quotes.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/Todo.js"></script>
 </body>
 
 </html>

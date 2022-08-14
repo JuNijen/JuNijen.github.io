@@ -8,6 +8,6 @@ const currentImage = imageList[Math.floor(Math.random() * imageList.length)];
 
 // 이미지에 블랙 그라디언트를 오버레이처럼 덧데어줌
 document.body.style =
-    `background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/${currentImage}');`;
+    `background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('./img/${currentImage}');`;
 // `background: transparent url('../img/${currentImage}');`;
 // `background: transparent url('../img/${currentImage}') no-repeat center;`;
