@@ -8,15 +8,13 @@ function handleResize() {
   // let windowHeight = window.innerHeight;
   // titleText.innerText = windowWidth + " + " + windowHeight;
 
-  if(windowWidth >= 1250){
+  if (windowWidth >= 1250) {
     // biggest
-    body.style.backgroundColor = colors[3];  
-  }
-  else if(windowWidth >= 1000){
+    body.style.backgroundColor = colors[3];
+  } else if (windowWidth >= 1000) {
     // middle
     body.style.backgroundColor = colors[2];
-  }
-  else{
+  } else {
     // smallest
     body.style.backgroundColor = colors[1];
   }
